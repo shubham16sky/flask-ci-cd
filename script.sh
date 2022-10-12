@@ -7,6 +7,6 @@ if [ ! -z "$container" ]
 then
 	sudo docker stop testing && sudo docker rm testing
 else
-	sudo docker run --name "testing" --detach -p 5002:5002 flask-ci-cd
+	sudo docker run --name "testing" --detach -p 5005:5002 flask-ci-cd
 fi 
 
