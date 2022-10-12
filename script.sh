@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-container=`sudo docker ps | awk '{print $NF}' | awk '(NR>1)'`
+container=`sudo docker ps | awk '{print $NF}' | awk '(NR>1)' | grep -E "testing"`
 
 
 if [ ! -z "$container" ]
